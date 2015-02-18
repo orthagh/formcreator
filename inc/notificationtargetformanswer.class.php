@@ -84,13 +84,13 @@ class PluginFormcreatorNotificationTargetFormanswer extends NotificationTarget
          'plugin_formcreator_need_validation' => array(
                'name'     => __('A form need to be validate', 'formcreator'),
                'subject'  => __('A form from GLPI need to be validate', 'formcreator'),
-               'content'  => __('Hi,\nA form from GLPI need to be validate and you have been choosen as the validator.\nYou can access it by clicking onto this link:\n##formcreator.validation_link##', 'formcreator'),
+               'content'  => __('Hi,\nA form from GLPI need to be validate and you have been choosen as the validator.\nYou can access it by clicking onto this link:\n<a href="##formcreator.validation_link##">##formcreator.validation_link##</a>', 'formcreator'),
                'notified' => self::APPROVER,
             ),
          'plugin_formcreator_refused'         => array(
                'name'     => __('The form is refused', 'formcreator'),
                'subject'  => __('Your form have been refused by the validator', 'formcreator'),
-               'content'  => __('Hi,\nWe are sorry to inform you that your form have been refused by the validator for the reason below:\n##formcreator.validation_comment##\n\nYou can still modify and resubmit it by clicking onto this link:\n##formcreator.validation_link##', 'formcreator'),
+               'content'  => __('Hi,\nWe are sorry to inform you that your form have been refused by the validator for the reason below:\n##formcreator.validation_comment##\n\nYou can still modify and resubmit it by clicking onto this link:\n<a href="##formcreator.validation_link##">##formcreator.validation_link##</a>', 'formcreator'),
                'notified' => self::AUTHOR,
             ),
          'plugin_formcreator_accepted'        => array(
